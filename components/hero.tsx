@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
     return (
-        <section>
+        <section className="sm:mb-24 scroll-mt-36" id="home">
             <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div

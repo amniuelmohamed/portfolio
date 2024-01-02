@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
     return (
-        <section className="text-center py-20 sm:py-0">
+        <section className="text-center py-20 sm:py-24 scroll-mt-6" id="about">
             <SectionHeading>About me</SectionHeading>
             <motion.div
                 className="space-y-5 leading-[1.75]"
