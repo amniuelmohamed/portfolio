@@ -8,10 +8,13 @@ import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Hero() {
+    const ref = useSectionInView("Home");
+
     return (
-        <section className="sm:mb-24 scroll-mt-36" id="home">
+        <section ref={ref} className="sm:mb-24 scroll-mt-36" id="home">
             <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div

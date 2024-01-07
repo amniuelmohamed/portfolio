@@ -3,10 +3,17 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
+    const ref = useSectionInView("About");
+
     return (
-        <section className="text-center py-20 sm:py-24 scroll-mt-6" id="about">
+        <section
+            ref={ref}
+            className="text-center py-20 sm:py-24 scroll-mt-6"
+            id="about"
+        >
             <SectionHeading>About me</SectionHeading>
             <motion.div
                 className="space-y-5 leading-[1.75]"
