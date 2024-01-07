@@ -4,8 +4,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
+import { useActiveSection } from "@/context/active-section-context-provider";
 
 export default function Header() {
+    const { activeSection, setActiveSection, setTimeout } = useActiveSection();
+
     return (
         <header className="z-[999] relative">
             <motion.div
@@ -24,9 +27,29 @@ export default function Header() {
                         >
                             <Link
                                 href={link.hash}
-                                className="p-2 text-gray-500 hover:text-gray-950 transition-colors"
+                                className={`relative p-2 text-gray-500 hover:text-gray-950 transition-colors ${
+                                    activeSection === link.name
+                                        ? "text-gray-950"
+                                        : ""
+                                }`}
+                                onClick={() => {
+                                    setActiveSection(link.name);
+                                    setTimeout(Date.now());
+                                }}
                             >
                                 {link.name}
+
+                                {activeSection === link.name && (
+                                    <motion.span
+                                        className="bg-gray-100 absolute inset-0 -z-10 rounded-full"
+                                        layoutId="activeSection"
+                                        transition={{
+                                            type: "spring",
+                                            stiffness: 380,
+                                            damping: 30,
+                                        }}
+                                    ></motion.span>
+                                )}
                             </Link>
                         </motion.li>
                     ))}
