@@ -47,7 +47,7 @@ export default function About() {
                     <span className="font-bold">
                         I didn't let go of my passion for technology.
                     </span>{" "}
-                    Evenings and weekends became my playground for
+                    Evenings and weekends became my playground for{" "}
                     <span className="font-bold">self-improvement</span>. I dived
                     into self-training, honing my skills in web development,
                     constantly seeking to learn more and stay up-to-date with
@@ -61,7 +61,7 @@ export default function About() {
                     evolved as a web developer.
                 </p>
                 <p>
-                    Now, armed with a solid foundation in technologies like
+                    Now, armed with a solid foundation in technologies like{" "}
                     <span className="font-bold">
                         NextJS, React, JavaScript, HTML, CSS, and more
                     </span>
