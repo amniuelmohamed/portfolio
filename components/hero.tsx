@@ -9,9 +9,11 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSection } from "@/context/active-section-context-provider";
 
 export default function Hero() {
     const ref = useSectionInView("Home");
+    const { setActiveSection, setTimeout } = useActiveSection();
 
     return (
         <section ref={ref} className="sm:mb-24 scroll-mt-36" id="home">
@@ -66,6 +68,10 @@ export default function Hero() {
                 <Link
                     href={"#contact"}
                     className="group bg-gray-950 text-white px-6 py-3 flex items-center gap-2 w-fit rounded-full hover:scale-[1.07] transition active:scale-[1.07]"
+                    onClick={() => {
+                        setActiveSection("Contact");
+                        setTimeout(Date.now());
+                    }}
                 >
                     Contact me here{" "}
                     <BsArrowRight className="opacity-80 group-hover:translate-x-1 transition" />
