@@ -56,7 +56,8 @@ export default function Contact() {
                     placeholder="Your Email"
                     required
                     maxLength={200}
-                    className="p-4 rounded-lg borderBlack focus:border-[2px] focus:border-black focus:outline-none"
+                    className="p-4 rounded-lg borderBlack focus:border-[2px] focus:border-black focus:outline-none transition-all dark:focus:border
+                    dark:text-black/80 dark:bg-white/10 dark:focus:bg-white dark:placeholder:text-white/80 dark:focus:placeholder:text-black/40"
                 />
                 <textarea
                     ref={messageRef}
@@ -64,7 +65,8 @@ export default function Contact() {
                     placeholder="Your Message"
                     required
                     maxLength={5000}
-                    className="h-52 resize-none p-4 rounded-lg borderBlack focus:border-[2px] focus:border-black focus:outline-none"
+                    className="h-52 resize-none p-4 rounded-lg borderBlack focus:border-[2px] focus:border-black focus:outline-none transition-all dark:focus:border
+                    dark:text-black/80 dark:bg-white/10 dark:focus:bg-white dark:placeholder:text-white/80 dark:focus:placeholder:text-black/40"
                 />
                 <SubmitBtn />
             </form>

@@ -67,7 +67,8 @@ export default function Hero() {
             >
                 <Link
                     href={"#contact"}
-                    className="group bg-gray-950 text-white px-6 py-3 flex items-center gap-2 w-fit rounded-full hover:scale-[1.07] transition active:scale-[1.07]"
+                    className="group bg-gray-950 text-white px-6 py-3 flex items-center gap-2 w-fit rounded-full hover:scale-[1.07] transition active:scale-[1.07]
+                    borderBlack"
                     onClick={() => {
                         setActiveSection("Contact");
                         setTimeout(Date.now());
@@ -78,7 +79,8 @@ export default function Hero() {
                 </Link>
                 <a
                     href="/CV.pdf"
-                    className="group bg-white text-gray-950 px-6 py-3 flex items-center gap-2 w-fit rounded-full border border-gray-200 hover:scale-[1.07] transition active:scale-[1.07]"
+                    className="group bg-white text-gray-950 px-6 py-3 flex items-center gap-2 w-fit rounded-full borderBlack hover:scale-[1.07] 
+                    transition active:scale-[1.07] dark:bg-white/10 dark:text-white"
                     download
                 >
                     Download CV{" "}
@@ -88,14 +90,16 @@ export default function Hero() {
                     <a
                         href="https://www.linkedin.com/in/amniuel-mohamed/"
                         target="_blank"
-                        className="bg-white text-gray-700 rounded-full border border-gray-200 w-[54px] h-[54px] flex items-center justify-center hover:text-gray-950 hover:scale-110 transition active:scale-110"
+                        className="bg-white text-gray-700 rounded-full borderBlack w-[54px] h-[54px] flex items-center justify-center 
+                        hover:text-gray-950 hover:scale-110 transition active:scale-110 dark:bg-white/10 dark:text-gray-400 dark:hover:text-gray-200"
                     >
                         <FaLinkedin />
                     </a>
                     <a
                         href="https://github.com/amniuelmohamed"
                         target="_blank"
-                        className="bg-white text-gray-700 rounded-full border border-gray-200 w-[54px] h-[54px] flex items-center justify-center hover:text-gray-950 hover:scale-110 transition active:scale-110"
+                        className="bg-white text-gray-700 rounded-full borderBlack w-[54px] h-[54px] flex items-center justify-center 
+                        hover:text-gray-950 hover:scale-110 transition active:scale-110 dark:bg-white/10 dark:text-gray-400 dark:hover:text-gray-200"
                     >
                         <FaGithubSquare />
                     </a>
