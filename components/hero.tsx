@@ -30,6 +30,7 @@ export default function Hero() {
                             src={portraitImg}
                             alt="Mohamed Portrait"
                             className="w-28 h-28 rounded-full border-4 border-white object-cover"
+                            quality={100}
                         />
                     </motion.div>
                     <motion.span
