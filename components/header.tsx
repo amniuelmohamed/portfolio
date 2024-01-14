@@ -30,7 +30,7 @@ export default function Header() {
                                 href={link.hash}
                                 className={`relative p-2 text-gray-500 hover:text-gray-950 dark:text-gray-400 dark:hover:text-gray-200 transition-colors ${
                                     activeSection === link.name
-                                        ? "text-gray-950 dark:text-gray-200"
+                                        ? "text-gray-950 dark:!text-gray-200"
                                         : ""
                                 }`}
                                 onClick={() => {
