@@ -31,21 +31,21 @@ export default function Project({
             className="group"
         >
             <article
-                className="group relative bg-gray-100 rounded-lg overflow-hidden border border-gray-200 sm:h-[20rem] flex group-even:flex-row-reverse
-                            hover:bg-gray-200 transition"
+                className="group relative bg-gray-100 rounded-lg overflow-hidden borderBlack sm:h-[20rem] flex group-even:flex-row-reverse
+                            hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20 dark:text-white"
             >
                 <div className="w-1/2 pt-6 pb-4 pl-4 pr-1 sm:pt-10 sm:pb-7 sm:px-8 flex flex-col h-full">
                     <h3 className="font-semibold text-xl sm:text-2xl">
                         {title}
                     </h3>
-                    <p className="mt-2 text-gray-700 leading-relaxed">
+                    <p className="mt-2 text-gray-700 leading-relaxed dark:text-white/70">
                         {description}
                     </p>
                     <ul className="flex flex-wrap gap-1 sm:gap-2 mt-4 sm:mt-auto">
                         {tags.map((tag, index) => (
                             <li
                                 key={index}
-                                className="bg-black/[0.7] text-white rounded-full px-3 py-2 text-[0.7rem] uppercase tracking-wider"
+                                className="bg-black/[0.7] text-white rounded-full px-3 py-2 text-[0.7rem] uppercase tracking-wider dark:text-white/70"
                             >
                                 {tag}
                             </li>
