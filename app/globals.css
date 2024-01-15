@@ -5,8 +5,3 @@
 .borderBlack {
     @apply border border-black/10;
 }
-
-.blur-10 {
-    filter: blur(10rem);
-    -webkit-filter: blur(10rem);
-}
