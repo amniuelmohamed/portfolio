@@ -7,7 +7,7 @@ import Skills from "@/components/skills";
 
 export default function Home() {
     return (
-        <main className="max-w-4xl mx-auto px-4 z-30 relative bg-transparent">
+        <main className="max-w-4xl mx-auto px-4">
             <Hero />
             <SectionDivider />
             <About />
