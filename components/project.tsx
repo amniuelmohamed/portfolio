@@ -4,6 +4,7 @@ import { projectsData } from "@/lib/data";
 import { useScroll, motion, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
+import { FaExternalLinkAlt, FaGithubSquare } from "react-icons/fa";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -12,6 +13,8 @@ export default function Project({
     description,
     tags,
     imageUrl,
+    demoUrl,
+    githubUrl,
 }: ProjectProps) {
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
@@ -35,10 +38,31 @@ export default function Project({
                             hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20 dark:text-white"
             >
                 <div className="w-1/2 pt-6 pb-4 pl-4 pr-1 sm:pt-10 sm:pb-7 sm:px-8 flex flex-col h-full">
-                    <h3 className="font-semibold text-xl sm:text-2xl">
+                    {/* <h3 className="font-semibold text-xl sm:text-2xl">
                         {title}
-                    </h3>
-                    <p className="mt-2 text-gray-700 leading-relaxed dark:text-white/70">
+                    </h3> */}
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+                        <h3 className="font-semibold text-xl sm:text-2xl">
+                            {title}
+                        </h3>
+                        <div className="flex items-center gap-2">
+                            <a
+                                href={demoUrl}
+                                target="_blank"
+                                className="text-gray-700 dark:text-white/70 hover:text-gray-900 dark:hover:text-white transition hover:scale-110"
+                            >
+                                <FaExternalLinkAlt size="16px" />
+                            </a>
+                            <a
+                                href={githubUrl}
+                                target="_blank"
+                                className="text-gray-700 dark:text-white/70 hover:text-gray-900 dark:hover:text-white transition hover:scale-110"
+                            >
+                                <FaGithubSquare size="19px" />
+                            </a>
+                        </div>
+                    </div>
+                    <p className="mt-3 text-gray-700 leading-relaxed dark:text-white/70">
                         {description}
                     </p>
                     <ul className="flex flex-wrap gap-1 sm:gap-2 mt-4 sm:mt-auto">

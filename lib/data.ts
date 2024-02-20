@@ -1,10 +1,7 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import trekbagImg from "@/public/trekbag.png";
+import tastytreatImg from "@/public/food-delivery-app.png";
 
 export const links = [
     {
@@ -29,54 +26,50 @@ export const links = [
     },
 ] as const;
 
-export const experiencesData = [
-    {
-        title: "Graduated bootcamp",
-        location: "Miami, FL",
-        description:
-            "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-        icon: React.createElement(LuGraduationCap),
-        date: "2019",
-    },
-    {
-        title: "Front-End Developer",
-        location: "Orlando, FL",
-        description:
-            "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-        icon: React.createElement(CgWorkAlt),
-        date: "2019 - 2021",
-    },
-    {
-        title: "Full-Stack Developer",
-        location: "Houston, TX",
-        description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-        icon: React.createElement(FaReact),
-        date: "2021 - present",
-    },
-] as const;
-
 export const projectsData = [
     {
         title: "CorpComment",
         description:
-            "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+            "CorpComment is a public feedback platform where users can give feedback to companies.",
+        tags: [
+            "React",
+            "TypeScript",
+            "Tailwind",
+            "Radix UI",
+            "Zustand",
+            "Vite",
+            "REST API",
+        ],
         imageUrl: corpcommentImg,
+        demoUrl: "https://corpcomment.onrender.com",
+        githubUrl: "https://github.com/amniuelmohamed/corpcomment",
     },
     {
-        title: "rmtDev",
+        title: "Tasty Treat",
         description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        imageUrl: rmtdevImg,
+            "TasteTreat is a food delivery website. It's easy to use and lets customers find and order their favorite meals from a wide selection.",
+        tags: ["React", "Bootstrap", "Redux", "Firebase"],
+        imageUrl: tastytreatImg,
+        demoUrl: "https://fooddelivery-23f82.web.app",
+        githubUrl: "https://github.com/amniuelmohamed/react-food-delivery",
+    },
+    {
+        title: "Trekbag",
+        description:
+            "Trekbag is a travel packing assistant designed to help you remember everything you need for your trips.",
+        tags: ["React", "Typescript", "Tailwind", "Zustand", "Vite"],
+        imageUrl: trekbagImg,
+        demoUrl: "https://trekbag.onrender.com",
+        githubUrl: "https://github.com/amniuelmohamed/trekbag",
     },
     {
         title: "Word Analytics",
         description:
             "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Typescript", "Tailwind"],
+        tags: ["React", "Typescript", "Tailwind", "Vite"],
         imageUrl: wordanalyticsImg,
+        demoUrl: "https://word-analytics.onrender.com",
+        githubUrl: "https://github.com/amniuelmohamed/word-analytics",
     },
 ] as const;
 
@@ -87,10 +80,11 @@ export const skillsData = [
     "TypeScript",
     "React",
     "Next.js",
-    "Node.js",
+    "REST API",
     "Git",
     "Tailwind",
     "Bootstrap",
     "Redux",
+    "Zustand",
     "Framer Motion",
 ] as const;
