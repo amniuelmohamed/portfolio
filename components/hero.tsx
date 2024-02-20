@@ -79,7 +79,7 @@ export default function Hero() {
                     <BsArrowRight className="opacity-80 group-hover:translate-x-1 transition" />
                 </Link>
                 <a
-                    href="/CV.pdf"
+                    href="/cv-amniuel-mohamed.pdf"
                     className="group bg-white text-gray-950 px-6 py-3 flex items-center gap-2 w-fit rounded-full borderBlack hover:scale-[1.07] 
                     transition active:scale-[1.07] dark:bg-white/10 dark:text-white"
                     download
